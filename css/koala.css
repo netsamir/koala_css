@@ -29,6 +29,7 @@ body {
   background-color: #FF3C38;
   border-radius: 50%;
   z-index: -1;
+  animation: spinMe 3s infinite;
 }
 .ear_right {
   position: absolute;
@@ -39,6 +40,7 @@ body {
   background-color: #FF3C38;
   border-radius: 50%;
   z-index: -1;
+  animation: spinMe 3s infinite;
 }
 .inner {
   position: absolute;
@@ -76,6 +78,16 @@ body {
   background-color: black;
   border-radius: 50%;
 }
+.inner_eye_active {
+  position: absolute;
+  width: 40.8%;
+  height: 40.8%;
+  top: 19.1%;
+  left: 19.1%;
+  background-color: black;
+  border-radius: 50%;
+  animation: reduce 3s 2;
+}
 .nose {
   position: absolute;
   width: 20%;
@@ -95,4 +107,27 @@ body {
   background-color: #6699CC;
 -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* CSS animation */
+
+@keyframes spinMe {
+  0% {
+    transform: rotate(0deg);
+    background-color: #FF3C38;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #EFCAB8;
+  }
+}
+
+@keyframes reduce {
+  0% {
+    background-color: black;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    background-color: blue;
+  }
 }
