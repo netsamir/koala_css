@@ -1,0 +1,29 @@
+body {
+/*css for full size background image*/
+  background: url('../img/OLIESS0.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+h1 {
+  margin: 50px;
+}
+.frame {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 336px;
+  height: 400px;
+  background-color: white;
+}
+.border {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 296px;
+  height: 360px;
+  background-color: black;
+}
