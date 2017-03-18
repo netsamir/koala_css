@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/piet.css">
@@ -21,15 +21,26 @@
         <![endif]-->
 
             <h1> Piet Mondrian : Composition II in Red, Blue and Yellow </h1>
-        <div class='frame'>
+      <div id="app">
+        <div class="frame">
           <div class='border'>
+            <div v-on:mouseover="fadeWhite1" v-bind:class="VWhite1"></div>
+            <div v-on:mouseover="fadeWhite2" v-bind:class="VWhite2"></div>
+            <div v-on:mouseover="fadeBlue" v-bind:class="VBlue"></div>
+            <div v-on:mouseover="fadeRed" v-bind:class="VRed"></div>
+            <div v-on:mouseover="fadeWhite3" v-bind:class="VWhite3"></div>
+            <div v-on:mouseover="fadeWhite4" v-bind:class="VWhite4"></div>
+            <div v-on:mouseover="fadeYellow" v-bind:class="VYellow"></div>
           </div>
         </div>
+        <!-- end of app -->
+      </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/vendor/vue.min.js"></script>
+        <script src="js/piet.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
